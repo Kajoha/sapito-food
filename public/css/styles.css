@@ -59,9 +59,28 @@ a {
   font-weight: 600;
   color: #264E2C; }
 
+.discount__ad {
+  float: right;
+  background-color: #264E2C;
+  border-radius: 0.3rem;
+  margin-right: 8rem;
+  width: 27.875rem;
+  height: 16.25rem; }
+
+.discount__ad__content {
+  color: #F6F7CD;
+  font-family: "Poppins", sans-serif;
+  margin-left: 0.9rem; }
+  .discount__ad__content h3 {
+    font-size: 2rem; }
+  .discount__ad__content a {
+    color: #F6F7CD;
+    background-color: #9DB33E;
+    padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+    border-radius: 0.3rem; }
+
 .header {
-  height: 5.188rem;
-  display: flex; }
+  height: 5.188rem; }
 
 .header-website-img {
   padding: 0.7rem; }
@@ -71,8 +90,7 @@ a {
   padding-top: 0.4rem; }
 
 .header-website-menu {
-  padding-top: 1.9rem;
-  margin-left: 18rem; }
+  padding-top: 1.9rem; }
 
 .logo {
   display: inline-flex; }
@@ -82,7 +100,13 @@ a {
 
 .header__menu {
   display: inline-flex;
-  float: right; }
+  float: right;
+  margin: 2rem 5rem 0 0; }
+  .header__menu a {
+    margin-left: 7.5rem; }
+  @media (max-width: 60rem) {
+    .header__menu {
+      display: none; } }
 
 .clearfix::after {
   clear: both;
@@ -198,23 +222,3 @@ a {
   clear: both;
   content: "";
   display: table; }
-
-.discount__ad {
-  float: right;
-  background-color: #264E2C;
-  border-radius: 0.3rem;
-  margin-right: 8rem;
-  width: 27.875rem;
-  height: 16.25rem; }
-
-.discount__ad__content {
-  color: #F6F7CD;
-  font-family: "Poppins", sans-serif;
-  margin-left: 0.9rem; }
-  .discount__ad__content h3 {
-    font-size: 2rem; }
-  .discount__ad__content a {
-    color: #F6F7CD;
-    background-color: #9DB33E;
-    padding: 0.3rem 0.4rem 0.3rem 0.4rem;
-    border-radius: 0.3rem; }

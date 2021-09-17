@@ -1,6 +1,5 @@
 .header{
   height: 5.188rem;
-  display: flex;
 }
 
 .header-website-img{
@@ -14,7 +13,6 @@
 
 .header-website-menu{
   padding-top: 1.9rem;
-  margin-left: 18rem;
 }
 
 .logo {
@@ -29,7 +27,14 @@
 .header__menu {
   display: inline-flex ;
   float: right ;
+  margin: 2rem 5rem 0 0;
 
+  a {
+    margin-left: 7.5rem;
+  }
+  @media (max-width: 60rem) {
+    display: none;
+  }
 }
 
 // clearfix
