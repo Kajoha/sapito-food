@@ -7,15 +7,15 @@
 }
 
 .seach-box-input{
-  margin-left: 19.3rem;
-  margin-top: 1.5rem;
-  height: 41px;
   border-radius: 16px;
   border: none;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.404);
-  outline: none;
   font-family: $secondary-typo;
   font-size: $typo-s;
+  height: 41px;
+  margin-left: 19.3rem;
+  margin-top: 1.5rem;
+  outline: none;
   text-indent: 12px;
 }
 
@@ -42,18 +42,11 @@
   margin-left: 23rem;
 }
 
-.recipe-info-links a+a{
+.recipe-info-links a + a{
   padding-left: 2rem;
 }
 
 .recipe-info-description{
   font-family: $secondary-typo;
   font-size: $typo-s;
-}
-
-.clearfix::after {
-
-  clear: both ;
-  content: "" ;
-  display: table ;
 }

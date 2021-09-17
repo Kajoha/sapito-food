@@ -12,6 +12,13 @@ ul, li {
   padding: 0px;
 }
 
+.clearfix::after {
+
+  clear: both ;
+  content: "" ;
+  display: table ;
+}
+
 .wrapper {
   width: $mobile-wrapper;
   margin: 0 auto;
