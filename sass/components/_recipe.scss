@@ -1,3 +1,7 @@
+.blog {
+  position: relative;
+}
+
 .recipe {
   position: relative;
 }
@@ -6,9 +10,13 @@
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
-  margin-top: 20rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   align-items: center;
+
+  @media (min-width: 60rem) {
+    margin-top: 10rem;
+  }
 }
 
 .recipe-author__description {
@@ -24,7 +32,11 @@
     font-size: $typo-s;
   }
   width: 65%;
+  @media (min-width: 60rem) {
+    width: 45%;
+  }
 }
+
 
 .recipe-author__photo {
   display: inline-block;
@@ -63,5 +75,11 @@
 
 .recipe__description--top{
   margin-top: 8rem;
+}
+
+.recipe__description--left {
+  @media (min-width: 60rem) {
+    width: 60%;
+  }
 }
 

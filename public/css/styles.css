@@ -16,8 +16,10 @@ a {
 .gallery {
   display: flex;
   gap: 0.8rem;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 3rem;
+  position: absolute;
+  right: 2rem;
   width: 90%; }
   .gallery img {
     border-radius: 0.5rem;
@@ -27,7 +29,11 @@ a {
         width: 100%; } }
   @media (min-width: 60rem) {
     .gallery {
-      flex-direction: column; } }
+      align-self: flex-end;
+      flex-direction: column;
+      top: 90rem;
+      right: 5rem;
+      width: 30%; } }
 
 .gallery__items {
   display: flex;
@@ -37,25 +43,33 @@ a {
     width: 90%; }
   @media (min-width: 60rem) {
     .gallery__items {
-      flex-direction: row; }
+      flex-direction: row;
+      gap: 1.2rem; }
       .gallery__items img {
-        height: 70%; } }
+        width: 31%;
+        height: 31%; } }
 
 .ad-book {
   display: flex;
   justify-content: center;
+  margin-top: 40rem;
   width: 90%;
   position: relative; }
+  @media (min-width: 30rem) {
+    .ad-book {
+      margin-top: 60rem; } }
+  @media (min-width: 45rem) {
+    .ad-book {
+      margin-top: 75rem; } }
+  @media (min-width: 60rem) {
+    .ad-book {
+      margin-top: 10rem;
+      width: 50%; } }
 
 .ad-book__img {
-  position: absolute;
-  left: 0; }
+  border-radius: 2rem 0 0 2rem; }
 
 .ad-book__text {
-  display: inline;
-  padding: 5rem 0 5rem 10rem;
-  position: absolute;
-  right: .1rem;
   font-size: 2rem;
   font-weight: 600;
   color: #264E2C; }
@@ -150,6 +164,9 @@ a {
   .sidebar-links a:hover {
     text-decoration: underline; }
 
+.blog {
+  position: relative; }
+
 .recipe {
   position: relative; }
 
@@ -157,9 +174,12 @@ a {
   display: flex;
   justify-content: flex-end;
   gap: 2rem;
-  margin-top: 20rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   align-items: center; }
+  @media (min-width: 60rem) {
+    .recipe-author {
+      margin-top: 10rem; } }
 
 .recipe-author__description {
   display: inline-block;
@@ -171,6 +191,9 @@ a {
     margin: 0; }
   .recipe-author__description span {
     font-size: 1.5rem; }
+  @media (min-width: 60rem) {
+    .recipe-author__description {
+      width: 45%; } }
 
 .recipe-author__photo {
   display: inline-block; }
@@ -202,3 +225,26 @@ a {
 
 .recipe__description--top {
   margin-top: 8rem; }
+
+@media (min-width: 60rem) {
+  .recipe__description--left {
+    width: 60%; } }
+
+.discount__ad {
+  float: right;
+  background-color: #264E2C;
+  border-radius: 0.3rem;
+  width: 27.875rem;
+  height: 16.25rem; }
+
+.discount__ad__content {
+  color: #F6F7CD;
+  font-family: "Poppins", sans-serif;
+  margin-left: 0.9rem; }
+  .discount__ad__content h3 {
+    font-size: 2rem; }
+  .discount__ad__content a {
+    color: #F6F7CD;
+    background-color: #9DB33E;
+    padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+    border-radius: 0.3rem; }
