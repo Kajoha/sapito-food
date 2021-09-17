@@ -1,0 +1,22 @@
+.ad-book {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+}
+
+.ad-book__img {
+  position: absolute;
+  left: 0;
+}
+
+.ad-book__text {
+  display: inline;
+  padding: 5rem 0 5rem 10rem;
+  position: absolute;
+  right: .1rem;
+  font-size: $typo-m;
+  font-family: $secondary-typo;
+  font-weight: 600;
+  color: $primary-green;
+}
