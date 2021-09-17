@@ -4,14 +4,11 @@
 html {
   margin: 0;
   font-size: 10px;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 body {
   background: #F6F7CD;
   margin: 0; }
-
-ul, li {
-  padding: 0px; }
 
 .gallery {
   display: flex;
@@ -56,7 +53,6 @@ ul, li {
   position: absolute;
   right: .1rem;
   font-size: 2rem;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #264E2C; }
 
@@ -87,38 +83,43 @@ ul, li {
   height: 83px; }
 
 .seach-box-input {
-  margin-left: 19.3rem;
   margin-top: 1.5rem;
   height: 41px;
-  border-radius: 16px;
+  border-radius: .16rem;
   border: none;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.404);
   outline: none;
-  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   text-indent: 12px; }
 
 .seach-box-input::placeholder {
   color: #bdbdbd; }
 
-.recipe-box-img {
-  height: 18rem; }
+.recipe {
+  position: relative; }
 
-.recipe-info-title {
-  display: inline;
+.recipe__title {
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem; }
+  font-size: 3rem;
+  margin-top: 3rem; }
 
-.recipe-info-links {
+.recipe__links {
   display: block;
-  margin-left: 23rem; }
+  margin-top: 1rem;
+  position: absolute;
+  right: 3rem; }
+  .recipe__links img {
+    width: 3rem; }
 
-.recipe-info-links a + a {
+.recipe__links a + a {
   padding-left: 2rem; }
 
-.recipe-info-description {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.5rem; }
+.recipe__description {
+  font-size: 1.5rem;
+  margin-top: 2rem; }
+
+.recipe__description--top {
+  margin-top: 8rem; }
 
 .clearfix::after {
   clear: both;

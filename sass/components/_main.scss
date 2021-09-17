@@ -13,7 +13,6 @@
   border: none;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.404);
   outline: none;
-  font-family: $secondary-typo;
   font-size: $typo-s;
   text-indent: 12px;
 }
@@ -22,28 +21,37 @@
   color: rgb(189, 189, 189);
 }
 
-.recipe-box-img{
-  height: 18rem;
+.recipe {
+  position: relative;
 }
 
-.recipe-info-title{
-  display: inline;
+.recipe__title{
   font-family: $typo-title;
-  font-size: $typo-m;
+  font-size: $typo-x;
+  margin-top: 3rem;
 }
 
-.recipe-info-links{
+.recipe__links{
   display: block;
-  margin-left: 23rem;
+  margin-top: 1rem;
+  position: absolute;
+  right: 3rem;
+  img {
+    width: 3rem;
+  }
 }
 
-.recipe-info-links a+a{
+.recipe__links a+a{
   padding-left: 2rem;
 }
 
-.recipe-info-description{
-  font-family: $secondary-typo;
+.recipe__description{
   font-size: $typo-s;
+  margin-top: 2rem;
+}
+
+.recipe__description--top{
+  margin-top: 8rem;
 }
 
 .clearfix::after {
