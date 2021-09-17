@@ -101,7 +101,8 @@ a {
 .header__menu {
   display: inline-flex;
   float: right;
-  margin: 2rem 5rem 0 0; }
+  margin: 2rem 5rem 0 0;
+  color: black; }
   .header__menu a {
     margin-left: 7.5rem; }
   @media (max-width: 60rem) {
