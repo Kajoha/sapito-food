@@ -10,10 +10,14 @@ body {
   background: #F6F7CD;
   margin: 0; }
 
+a {
+  text-decoration: none; }
+
 .gallery {
   display: flex;
   gap: 0.8rem;
   justify-content: center;
+  margin-top: 3rem;
   width: 90%; }
   .gallery img {
     border-radius: 0.5rem;
@@ -76,31 +80,39 @@ body {
   content: "";
   display: table; }
 
-.hero-background {
-  width: 100%; }
-
-.seach-box {
-  height: 83px; }
-
-.seach-box-input {
-  margin-top: 1.5rem;
-  height: 41px;
-  border-radius: .16rem;
-  border: none;
-  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.404);
-  outline: none;
-  font-size: 1.5rem;
-  text-indent: 12px; }
-
-.seach-box-input::placeholder {
-  color: #bdbdbd; }
-
 .recipe {
   position: relative; }
+
+.recipe-author {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-top: 20rem;
+  margin-bottom: 5rem;
+  align-items: center; }
+
+.recipe-author__description {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: #264E2C;
+  width: 65%; }
+  .recipe-author__description h4 {
+    margin: 0; }
+  .recipe-author__description span {
+    font-size: 1.5rem; }
+
+.recipe-author__photo {
+  display: inline-block; }
 
 .recipe__title {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
+  margin-top: 3rem; }
+
+.recipe__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
   margin-top: 3rem; }
 
 .recipe__links {
@@ -120,8 +132,3 @@ body {
 
 .recipe__description--top {
   margin-top: 8rem; }
-
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: table; }

@@ -1,0 +1,67 @@
+.recipe {
+  position: relative;
+}
+
+.recipe-author {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-top: 20rem;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+.recipe-author__description {
+  display: inline-block;
+  font-family: $typo-title;
+  font-size: $typo-m;
+  color: $primary-green;
+
+  h4 {
+    margin: 0;
+  }
+  span {
+    font-size: $typo-s;
+  }
+  width: 65%;
+}
+
+.recipe-author__photo {
+  display: inline-block;
+}
+
+.recipe__title{
+  font-family: $typo-title;
+  font-size: $typo-x;
+  margin-top: 3rem;
+}
+
+.recipe__subtitle{
+  font-family: $typo-title;
+  font-size: $typo-m;
+  margin-top: 3rem;
+}
+
+.recipe__links{
+  display: block;
+  margin-top: 1rem;
+  position: absolute;
+  right: 3rem;
+  img {
+    width: 3rem;
+  }
+}
+
+.recipe__links a+a{
+  padding-left: 2rem;
+}
+
+.recipe__description{
+  font-size: $typo-s;
+  margin-top: 2rem;
+}
+
+.recipe__description--top{
+  margin-top: 8rem;
+}
+
