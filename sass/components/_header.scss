@@ -1,0 +1,25 @@
+.header{
+  height: 5.188rem;
+  display: flex;
+}
+
+.header-website-img{
+  padding: 0.7rem;
+}
+
+.header-website-name{
+  color: $green;
+  padding-top: 0.4rem;
+}
+
+.header-website-menu{
+  padding-top: 1.9rem;
+  margin-left: 18rem;
+}
+
+.clearfix::after {
+
+  clear: both ;
+  content: "" ;
+  display: table ;
+}

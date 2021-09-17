@@ -13,15 +13,3 @@ ul, li {
   padding: 0px;
 }
 
-.wrapper {
-  width: $mobile-wrapper;
-  margin: 0 auto;
-
-  @media (min-width: 50rem) {
-    width: $tablet-wrapper;
-   }
-
-  @media (min-width: 108rem) {
-   width: $desktop-wrapper;
-  }
-}
