@@ -1,5 +1,8 @@
 .blog {
   position: relative;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .recipe {
@@ -46,12 +49,19 @@
   font-family: $typo-title;
   font-size: $typo-x;
   margin-top: 3rem;
+  @media (min-width: 60rem) {
+    font-size: 4rem;
+  }
+
 }
 
 .recipe__subtitle{
   font-family: $typo-title;
   font-size: $typo-m;
   margin-top: 3rem;
+  @media (min-width: 60rem) {
+    font-size: $typo-l;
+  }
 }
 
 .recipe__links{
@@ -71,6 +81,9 @@
 .recipe__description{
   font-size: $typo-s;
   margin-top: 2rem;
+  @media (min-width: 60rem) {
+    font-size: $typo-m;
+  }
 }
 
 .recipe__description--top{

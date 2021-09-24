@@ -1,10 +1,10 @@
 .gallery {
   display: flex;
-  gap: 0.8rem;
+  gap: 1rem;
   justify-content: space-around;
   img {
     border-radius: 0.5rem;
-    width: 70%;
+    width: 80%;
     @media (min-width: 60rem) {
       width: 100%;
     }
@@ -12,7 +12,7 @@
   @media (min-width: 60rem) {
     align-self: flex-end ;
     flex-direction: column;
-    top: 90rem;
+    top: 25rem;
     right: 5rem;
     width: 30%;
   }
@@ -25,9 +25,9 @@
 .gallery__items {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  justify-content: space-between;
   img {
-    width: 90%;
+    width: 100%;
   }
   @media (min-width: 60rem) {
     flex-direction: row;
@@ -38,3 +38,4 @@
     }
   }
 }
+

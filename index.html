@@ -10,38 +10,27 @@
 </head>
 
 <body>
-
   <div class="header">
-    <div id="sidebar">
-      <button class="toggle-btn">
-        <span>&#9776</span>
-      </button>
-      <div class="sidebar-links">
-        <a id="abrir" href="#">Account</a>
-        <a href="#">Contact With Us</a>
-        <a href="products.html">Products</a>
-      </div>
-    </div>
-    <div class="logo">
-      <img src="img/logo.png" alt="Sapito food logo">
-      <h2>Sapito Food</h2>
-    </div>
-    <div class="header__menu">
-      <a href="#">Menu</a>
-      <a href="#">Location</a>
-      <a href="#">Community</a>
+    <a href="#"> <img src="img/logo.png" alt="sapito chef logo de la empresa"></a>
+    <div id="menu" class="header__menu js-menu">
+      <a href="#">Inicio</a>
+      <a href="#">Encuentranos</a>
+      <a href="#">Menú</a>
+      <a href="#" class="active">Blog</a>
+      <a class="header__menu--icon">
+        <img src="img/menu-burger.png" alt="">
+      </a>
     </div>
   </div>
-
+  <img class="banner" sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+  img/aguacates-rellenos-cangrejo-portada-1440x1080-_1_n6b2de_c_scale,w_200.jpg 200w,
+  img/aguacates-rellenos-cangrejo-portada-1440x1080-_1_n6b2de_c_scale,w_937.jpg 937w,
+  img/aguacates-rellenos-cangrejo-portada-1440x1080-_1_n6b2de_c_scale,w_1400.jpg 1400w"
+    src="img/aguacates-rellenos-cangrejo-portada-1440x1080-_1_n6b2de_c_scale,w_200.jpg"
+    alt="Platillo de aguacate relleno de cangrejo en una presentación gourmet">
   <div class="blog">
 
     <div class="recipe">
-      <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="
-        img/aguacates-rellenos-cangrejo-portada-1440x1080-_1_n6b2de_c_scale,w_200.jpg 200w,
-        img/aguacates-rellenos-cangrejo-portada-1440x1080-_1_n6b2de_c_scale,w_937.jpg 937w,
-        img/aguacates-rellenos-cangrejo-portada-1440x1080-_1_n6b2de_c_scale,w_1400.jpg 1400w"
-        src="img/aguacates-rellenos-cangrejo-portada-1440x1080-_1_n6b2de_c_scale,w_200.jpg"
-        alt="Platillo de aguacate relleno de cangrejo en una presentación gourmet">
       <h1 class="recipe__title">Aguacates rellenos de Cangrejo</h1>
       <div class="recipe__links">
         <a href="#"><img src="img/twitter.png" alt="twitter logo"></a>
@@ -57,17 +46,6 @@
         también quedan maravillosos puestos en una gran fuente para acompañar una comida al aire libre. Es una receta
         ganadora!
       </p>
-    </div>
-
-    <div class="discount__ad clearfix items">
-      <img src="img/ad-discuont-1.png" alt="">
-      <div class="discount__ad__content">
-        <h3>Reserva en Sapito Food</h3>
-        <p>Compra en línea los<br>
-          mejores platillos en oferta, con<br>
-          hasta un 50% de descuento</p>
-        <a href="#">Reservar</a>
-      </div>
     </div>
 
     <div class="recipe">
@@ -135,7 +113,7 @@
       </div>
     </div>
   </div>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>
