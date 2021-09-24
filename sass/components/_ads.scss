@@ -25,3 +25,27 @@
   font-weight: 600;
   color: $primary-green;
 }
+
+
+.ads-cupon {
+  align-items: center;
+  background-color: $primary-green;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+
+  @media (min-width: 60rem) {
+    position: absolute;
+    right: 2rem;
+    width: 40%;
+  }
+
+  p {
+    padding-left: 2rem;
+    font-size: $typo-m;
+    color: $white;
+  }
+}
