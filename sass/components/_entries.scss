@@ -41,6 +41,9 @@
   p {
     font-size: $typo-s;
     color: $black;
+    @media (max-width: 30rem) {
+      display: none;
+    }
   }
 
   img {
